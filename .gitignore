@@ -1,0 +1,49 @@
+# ---------------------------------------------------------------
+# Secretos y credenciales — NUNCA se suben
+# ---------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+
+# appsettings con valores reales — en desarrollo usar `dotnet user-secrets`
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Local.json
+
+# ---------------------------------------------------------------
+# .NET
+# ---------------------------------------------------------------
+bin/
+obj/
+out/
+[Dd]ebug/
+[Rr]elease/
+*.user
+*.suo
+*.userprefs
+.vs/
+TestResults/
+*.trx
+*.coverage
+coverage*.json
+BenchmarkDotNet.Artifacts/
+
+# ---------------------------------------------------------------
+# Sistema operativo y editores
+# ---------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+
+# ---------------------------------------------------------------
+# Temporales
+# ---------------------------------------------------------------
+*.log
+tmp/
